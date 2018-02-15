@@ -12,6 +12,6 @@ Make sure you have the following is installed:
 - OpenCV (cv2)
 
 Run
-
-$ python main.py
+1. Extract train.rar and test.rar in ./Data/
+2. $ python main.py
 (destroy figures to continue)
