@@ -20,7 +20,7 @@ def max_pool_2x2(x):
     return tf.nn.max_pool(value=x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
 
-# modified network architecture definition based on the model presented by LeCunn & Sermanet, "Traffic Sign Recognition with Multi-Scale Convolutional Networks", Courant Institute of Mathematical Sciences, New York University.
+# modified network architecture definition based on the model presented by LeCun & Sermanet, "Traffic Sign Recognition with Multi-Scale Convolutional Networks", Courant Institute of Mathematical Sciences, New York University.
 def my_net(x, n_classes,keep_prob):
 
     c1_out = 64
@@ -44,7 +44,7 @@ def my_net(x, n_classes,keep_prob):
 
     drop2 = tf.nn.dropout(pool2, keep_prob=keep_prob)
 
-    # before the first fully connected layer, concatenate features from both the first and second conv. layer to use features from both "deep" and higher resolution features (LeCunn & Sarmanet)
+    # before the first fully connected layer, concatenate features from both the first and second conv. layer to use features from both "deep" and higher resolution features (LeCun & Sarmanet)
     fc0 = tf.concat([flatten(drop1), flatten(drop2)], 1)
 
     fc1_out = 64
