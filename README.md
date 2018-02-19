@@ -1,6 +1,6 @@
 # Traffic-Sign-Classifier
 
-Implements a modified model and methods used by LeCun & Sermanet in "Traffic Sign Recognition with Multi-Scale Convolutional Networks", Courant Institute of Mathematical Sciences, New York University.
+Implements a modified model and methods used by LeCun & Sermanet in "Traffic Sign Recognition with Multi-Scale Convolutional Networks", Courant Institute of Mathematical Sciences, New York University, based on Udacity project proposal.
 (http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf)
 
 # Setup
